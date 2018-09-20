@@ -18,14 +18,3 @@ function gameInfo() {
         x.style.display = "none";
     }
 }
-function locations() {
-    var x = document.getElementById("locations");
-    var y = document.getElementById("home")
-    if (x.style.display !== "none") {
-        x.style.display = "block";
-        y.style.display = "none";
-
-    } else {
-        x.style.display = "none";
-    }
-}

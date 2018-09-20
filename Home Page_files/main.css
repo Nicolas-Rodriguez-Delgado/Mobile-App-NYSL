@@ -92,21 +92,9 @@
     text-align: left;
     color: beige;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 17px;
   }
     
 #gameinfo{
-  display: none;
-}
-#locations{
-  display: none;
-}
-#chat{
-  display: none;
-}
-#teams{
   display: none;
 }
 

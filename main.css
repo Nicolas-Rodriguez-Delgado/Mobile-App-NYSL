@@ -110,3 +110,11 @@
   display: none;
 }
 
+#house {
+  color: whitesmoke;
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  padding: 15px;
+}
+

@@ -7,25 +7,52 @@ function resp() {
     }
 }
 
-function gameInfo() {
-    var x = document.getElementById("gameinfo");
-    var y = document.getElementById("home")
-    if (x.style.display !== "none") {
-        x.style.display = "block";
-        y.style.display = "none";
 
-    } else {
-        x.style.display = "none";
-    }
-}
-function locations() {
-    var x = document.getElementById("locations");
-    var y = document.getElementById("home")
-    if (x.style.display !== "none") {
-        x.style.display = "block";
-        y.style.display = "none";
+$(document).ready(function(){
+    $(".game").click(function(){
+        $("#gameinfo").show();
+        $("#home").hide();
+        $("#locations").hide();
+        $("#chat").hide();
+        $("#teams").hide();
+    });
 
-    } else {
-        x.style.display = "none";
-    }
+    $(".locations").click(function() {
+        $("#locations").show();
+        $("#home").hide();
+        $("#chat").hide();
+        $("#teams").hide();
+        $("#gameinfo").hide();
+
+    });
+    $(".home").click(function() {
+        $("#home").show();
+        $("#chat").hide();
+        $("#teams").hide();
+        $("#gameinfo").hide();
+        $("#locations").hide();
+
+    });
+    $(".chat").click(function() {
+        $("#chat").show();
+        $("#home").hide();
+        $("#teams").hide();
+        $("#gameinfo").hide();
+        $("#locations").hide();
+
+    });
+    $(".teams").click(function() {
+        $("#teams").show();
+        $("#home").hide();
+        $("#chat").hide();
+        $("#gameinfo").hide();
+        $("#locations").hide();
+
+    });
+});
+
+function goBack() {
+    window.history.back();
 }
+
+

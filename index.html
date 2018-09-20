@@ -18,16 +18,18 @@
             <a href="javascript:void(0);" class="icon" onclick="resp()">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#news">Home</a>
-            <a href="#about">Game Info</a>
-            <a href="#locations">Locations</a>
-            <a href="#chat">Chat</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="home">Home</a>
+            <a href="#about"  class="game">Game Info</a>
+            <a href="#locations" class="locations">Locations</a>
+            <a href="#chat" class="chat">Chat</a>
+            <a href="#contact" class="contact">Contact</a>
             <a href="#home" class="fa fa-envelope" id="env"></a>
         </div>
 
         <div class="text-center">
             <img src="nysl_logo.png" class="logo img-fluid">
+            <a href="#home" class="fa fa-home home" id="house"></a>
+
         </div>
     </div>
 
@@ -36,24 +38,24 @@
 
 
     <div class="flex-container" id="home">
-        <div class="main" onclick="gameInfo()">
+        <div class="main game">
 
             <p><strong>Game Information</strong> </p>
 
         </div>
-        <div class="main" onclick="locations()">
+        <div class="main locations">
 
             <p><strong>Locations</strong> </p>
 
         </div>
 
-        <div class="main">
+        <div class="main chat">
 
             <p><strong>Chat</strong> </p>
 
         </div>
 
-        <div class="main">
+        <div class="main teams">
 
             <p><strong>Teams</strong> </p>
 
@@ -62,6 +64,8 @@
 
 
     <div id="gameinfo">
+            <div class="topnav text-center active">Game Information</div>
+
         <div class=" rows">
             <div class="row">
                 <div class="col"> 9/01</div>
@@ -119,6 +123,7 @@
 
     <div id="locations">
         <div class="rows">
+            <div class="topnav text-center active">Locations</div>
             <div class="row">
                 <div class="col">AJ Katzenmeier </div>
             </div>

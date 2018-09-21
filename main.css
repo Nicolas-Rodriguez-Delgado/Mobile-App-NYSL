@@ -6,7 +6,7 @@
 .header {
     background-image: url("football_pitch_background_2.jpg");
     margin-bottom: 10px;
-    
+    position: relative;
     width: auto;
     
 }
@@ -113,8 +113,17 @@
 #house {
   color: whitesmoke;
   font-size: 30px;
-  display: flex;
-  justify-content: left;
-  padding: 15px;
+  padding: 0px;
+  position: absolute;
+  left:4%;
+  bottom: 5%;
 }
+
+.escudo {
+  height: 90px;
+  width: 90px;
+  display: block;
+  padding: 5px;
+}
+
 
